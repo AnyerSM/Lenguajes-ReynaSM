@@ -76,7 +76,7 @@ public class ProbarArreglos {
  for(byte valor:algo){ //cada vuelta el valro de algo se va a depositar en la palabra valor
      builder.append((char)valor);
  }
- etiquetax.setText(builder.toString()); 
+// etiquetax.setText(builder.toString()); 
     
     }
     
