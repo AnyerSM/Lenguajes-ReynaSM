@@ -3,12 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package herencia;
+package Herenciaa;
 
 /**
  *
  * @author T-107
  */
-public class Delfin extends Animal {
+public class Delfin extends Animal implements ComportamientoRuido {
+
+    @Override
+    public String hacerRuido() {
+        return "GRRRRUUUUUUUUAAAAAAAR "+getNombre();
+    }
     
 }

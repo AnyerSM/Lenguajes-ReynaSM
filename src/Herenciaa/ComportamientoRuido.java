@@ -3,12 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package herencia;
+package Herenciaa;
 
 /**
  *
  * @author T-107
  */
-public class Tortuga extends Animal{
-    
+public interface ComportamientoRuido {
+    //hacer ruido mismo comportamiento
+    public String hacerRuido(); //no lleva llaves solo {}; muchas formas=polimorfismo
+        
+  
 }

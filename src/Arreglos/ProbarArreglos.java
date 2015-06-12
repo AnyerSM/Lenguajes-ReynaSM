@@ -27,7 +27,7 @@ public class ProbarArreglos {
             System.out.println("este elemento tiene un valor de: " +x[i]);
         }  
     for (int m:x){ //variable entera y var local x va empezar a iterar 
-            //y pone el primer elemento y ñluego se va increment va tomando el segundo valor q sigue
+            //y pone el primer elemento y luego se va increment va tomando el segundo valor q sigue
             //lenguaje expresivo una idea se puede poner muy facil en codigo 
             //x es un arreglo y se va a iterar y cada vez su valor se va a depositar en m
             System.out.println("Este elemento tiene un valor de: "+m);

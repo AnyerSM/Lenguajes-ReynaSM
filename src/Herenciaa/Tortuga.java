@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package herencia;
+package Herenciaa;
 
 /**
  *
  * @author T-107
  */
-public class Aguila extends Animal{
+public class Tortuga extends Animal{
     
 }
