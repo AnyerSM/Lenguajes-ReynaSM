@@ -6,10 +6,13 @@
 package miprimeraexcepcion;
 
 
+//interrupcion de un programa en una ejecucion
+//excepiones son para validar datos
+
 public class MenordeEdadException extends Exception { //ya es una excepcioncon extends Exception
     public MenordeEdadException(){  //declaracion del constructor
 //en las clases los construtores no se heredan se invocan con una  palabra super
-        super("eres un chamaco no te puedo registrar le voy a decir atu mama!!!");
+        super("eres un chamaco no te puedo registrar le voy a decir a tu mama!!!");
         
     }
 }
