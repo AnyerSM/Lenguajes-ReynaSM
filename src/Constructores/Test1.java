@@ -5,10 +5,6 @@
  */
 package Constructores;
 
-/**
- *
- * @author T-107
- */
 public class Test1 {
 int x;
 String nombre;
