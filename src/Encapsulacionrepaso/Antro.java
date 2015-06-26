@@ -15,5 +15,11 @@ public class Antro {
         System.out.println(u.getDireccion().getMunicipio()); 
 //invocacion de metodos por cadena preimero get direccion por la clase y municipio que es lo
 //q se necesita como escalonsubir sin saltar sino uno por uno
+    Bebida bebida=new Bebida();
+   bebida.setTipo("alcoholicas");
+   String[]reco= bebida.obtenerRecomendaciones();
+    for(String be:reco){
+        System.out.println("Bebida"+be);
+    }
     }
 }
