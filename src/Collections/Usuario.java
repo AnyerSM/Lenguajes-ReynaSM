@@ -39,6 +39,5 @@ public class Usuario {
         this.nombre = nombre;
         this.edad = edad;
         this.email = email;
-    }
-                  
+    }                 
 }
