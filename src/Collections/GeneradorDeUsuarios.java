@@ -17,12 +17,14 @@ public class GeneradorDeUsuarios {
     Usuario u2=new Usuario("Ana", 22, "ana@outlook.com");
     Usuario u3=new Usuario("Pedro", 33, "peter@yahoo.com");
     Usuario u4=new Usuario("Pancha", 60, "pancha@hotmail.com");
+    Usuario u5=new Usuario("Eduardo", 23, "lalo@hotmail.com");
     
     usuarios=new ArrayList<Usuario>(); //hijo de list arraylist //inicailizado
     usuarios.add(u1);//llenado
     usuarios.add(u2);//llenado
     usuarios.add(u3);//llenado
     usuarios.add(u4);
+    usuarios.add(u5);
     
     }
     public List<Usuario> getUsuarios() {

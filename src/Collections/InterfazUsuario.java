@@ -5,10 +5,10 @@
  */
 package Collections;
 
-/**
- *
- * @author T-107
- */
+import java.util.Collections;
+import java.util.List;
+import javax.swing.table.DefaultTableModel;
+
 public class InterfazUsuario extends javax.swing.JFrame {
 
     /**
@@ -131,9 +131,6 @@ public class InterfazUsuario extends javax.swing.JFrame {
 
         tablaUsuarios.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
                 {null, null, null}
             },
             new String [] {
@@ -162,8 +159,8 @@ public class InterfazUsuario extends javax.swing.JFrame {
                 .addGap(39, 39, 39)
                 .addComponent(botonCargarUsuarios)
                 .addGap(30, 30, 30)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(338, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(319, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Mostrar usuarios", jPanel2);
@@ -191,6 +188,18 @@ public class InterfazUsuario extends javax.swing.JFrame {
     }//GEN-LAST:event_BotonGuardarActionPerformed
 
     private void botonCargarUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCargarUsuariosActionPerformed
+       GeneradorDeUsuarios gen=new GeneradorDeUsuarios();
+       List<Usuario> usuarios= gen.getUsuarios();
+       Collections.sort(usuarios, new UsuarioPorNombre());
+        tablaUsuarios.setModel(new DefaultTableModel(new String[]{"Nombre", "Edad", "Email"}, gen.getUsuarios().size()));
+       //method chaning---->encadenamiento por metodos
+     int fila=0;
+     for(Usuario u:usuarios){
+         tablaUsuarios.setValueAt(u.getNombre(), fila, 0);
+         tablaUsuarios.setValueAt(u.getEdad(), fila, 1);
+         tablaUsuarios.setValueAt(u.getEmail(), fila, 2);
+      fila++;
+     }
         // TODO add your handling code here:
     }//GEN-LAST:event_botonCargarUsuariosActionPerformed
 
