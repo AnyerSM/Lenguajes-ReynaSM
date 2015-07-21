@@ -8,7 +8,7 @@ package Collections;
 public class Usuario {
     
     private String nombre;
-     private int edad;
+     private Integer edad;
      private String email;
 
     public String getNombre() {
@@ -19,11 +19,11 @@ public class Usuario {
         this.nombre = nombre;
     }
 
-    public int getEdad() {
+    public Integer getEdad() {
         return edad;
     }
 
-    public void setEdad(int edad) {
+    public void setEdad(Integer edad) {
         this.edad = edad;
     }
 
@@ -35,7 +35,7 @@ public class Usuario {
         this.email = email;
     }
 
-    public Usuario(String nombre, int edad, String email) {
+    public Usuario(String nombre, Integer edad, String email) {
         this.nombre = nombre;
         this.edad = edad;
         this.email = email;
