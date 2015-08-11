@@ -5,10 +5,6 @@
  */
 package Encapsulacionrepaso;
 
-/**
- *
- * @author T-107
- */
 public interface RecomendarBebidas {
 public void recomendar(Bebida b);
    
